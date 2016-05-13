@@ -25,7 +25,7 @@ gulp.task('serve', ['copy','sass','css','scripts'], function() {
 
 gulp.task('copy', function() {
     gulp.src(
-        './bower_components/fontawesome/fonts/*'
+        './bower_components/font-awesome/fonts/*'
     )
         .pipe(changed('fonts/'))
         .pipe(gulp.dest('fonts/'))
@@ -44,7 +44,7 @@ gulp.task('sass', function() {
 gulp.task('css', function() {
     return gulp.src([
       './bower_components/Swiper/dist/css/swiper.min.css',
-      './bower_components/fontawesome/css/font-awesome.min.css'
+      './bower_components/font-awesome/css/font-awesome.min.css'
     ])
       .pipe(changed('css/'))
       .pipe(concat('vendor.css'))
