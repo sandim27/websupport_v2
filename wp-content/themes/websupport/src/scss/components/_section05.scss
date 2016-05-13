@@ -1,0 +1,66 @@
+#section05 {
+  background-color: $color-cream;
+  padding: 68px 0;
+  @include breakpoint($wraper) {
+    padding: 40px 0;
+  }
+  .wrapper {
+    @include display-flex;
+    @include justify-content(center);
+    @include breakpoint($tablet) {
+      @include flex-direction(column);
+      @include align-items(center);
+    }
+  }
+  .green-step {
+    background-color: $color-green-base;
+    height: 120px;
+    width: 120px;
+    @include border-radius(100%);
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+    @include breakpoint($wraper) {
+      height: 100px;
+      width: 100px;
+    }
+    img {
+      display: block;
+    }
+  }
+  .about-step {
+    padding: 0 60px;
+    @include breakpoint($wraper) {
+      padding: 0 30px;
+    }
+    @include breakpoint($tablet) {
+      padding: 30px 0;
+    }
+    h3 {
+      text-align: center;
+      color: $color-black;
+      font-size: 36px;
+      font-weight: $font-regular;
+      margin: 0;
+      @include breakpoint($wraper) {
+        font-size: 24px;
+      }
+    }
+    img {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      @include breakpoint($wraper) {
+        width: 80%;
+      }
+    }
+    p {
+      text-align: center;
+      color: $color-black;
+      font-size: 16px;
+      font-weight: $font-regular;
+      @include opacity(0.5);
+      margin: 0;
+    }
+  }
+}
