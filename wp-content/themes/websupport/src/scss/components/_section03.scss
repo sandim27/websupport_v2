@@ -1,4 +1,10 @@
 #section03 {
+  background-size: cover;
+  
+  .wrapper {
+    display: flex;
+  }
+
   .section03faq {
     h2 {
       text-align: center;
@@ -80,6 +86,17 @@
     color: $color-black;
     text-align: center;
     background-color: $color-bright-gray;
+    padding-top: 90px;
+    margin-top: -90px;
+    margin-bottom: -40px;
+    /*width: 9000px;
+    margin-right: -9000px;*/
+
+    &:after {
+      display: table;
+      content: '';
+      background: red;
+    }
 
     h2 {
       color: $color-green-base;

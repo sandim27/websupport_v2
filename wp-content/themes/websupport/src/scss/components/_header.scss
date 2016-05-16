@@ -50,6 +50,7 @@ header {
       a {
         color: $color-white;
         font-size: 18px;
+        font-weight: $font-light;
         margin-left: 70px;
         @include opacity(.7);
 
