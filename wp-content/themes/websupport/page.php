@@ -160,6 +160,7 @@
               <div class="green-step"><img src="<?php echo get_template_directory_uri(); ?>/img/icon03-sec05.png" alt="Professional Webcare"/></div>
             </div>
           </section>
+
           <section id="section06">
             <div class="wrapper">
               <div class="wrap06">
@@ -191,54 +192,56 @@
             </div>
           </section>
 
-          <section id="section07">
-            <div id="swiper-slider">
-             <h2>Just Fixed</h2>
-              <div class="swiper-container">
-                   <div class="swiper-wrapper">
+         <section id="section07">
+           <div id="swiper-slider">
+             <div class="wrapper">
+               <h2>Just Fixed</h2>
+               <div class="swiper-container">
+                 <div class="swiper-wrapper">
 
-                       <div class="swiper-slide">
-                         <div class="slide-contayner">
-                           <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
-                           <h3>Henry Mann</h3>
-                           <h4>Hair Genesis</h4>
-                           <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
-                          </div>
-                       </div>
+                   <div class="swiper-slide">
+                     <div class="slide-contayner">
+                       <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
+                       <h3>Henry Mann</h3>
+                       <h4>Hair Genesis</h4>
+                       <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
+                     </div>
+                   </div>
 
-                       <div class="swiper-slide">
-                           <div class="slide-contayner">
-                             <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
-                             <h3>Henry Mann</h3>
-                             <h4>Hair Genesis</h4>
-                             <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
-                            </div>
-                       </div>
+                   <div class="swiper-slide">
+                     <div class="slide-contayner">
+                       <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
+                       <h3>Henry Mann</h3>
+                       <h4>Hair Genesis</h4>
+                       <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
+                     </div>
+                   </div>
 
-                       <div class="swiper-slide">
-                          <div class="slide-contayner">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
-                            <h3>Henry Mann</h3>
-                            <h4>Hair Genesis</h4>
-                            <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
-                           </div>
-                       </div>
+                   <div class="swiper-slide">
+                     <div class="slide-contayner">
+                       <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
+                       <h3>Henry Mann</h3>
+                       <h4>Hair Genesis</h4>
+                       <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
+                     </div>
+                   </div>
 
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-              </div>
-            </div>
-            <div id="customers">
-              <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-01.png" alt="Professional Webcare"/></div>
-              <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-02.png" alt="Professional Webcare"/></div>
-              <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-03.png" alt="Professional Webcare"/></div>
-              <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-04.png" alt="Professional Webcare"/></div>
-              <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-05.png" alt="Professional Webcare"/></div>
-              <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-06.png" alt="Professional Webcare"/></div>
-            </div>
-          </section>
+                 </div>
+               </div>
+               <div class="swiper-pagination"></div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+             </div>
+           </div>
+           <div id="customers">
+             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-01.png" alt="Professional Webcare"/></div>
+             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-02.png" alt="Professional Webcare"/></div>
+             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-03.png" alt="Professional Webcare"/></div>
+             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-04.png" alt="Professional Webcare"/></div>
+             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-05.png" alt="Professional Webcare"/></div>
+             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-06.png" alt="Professional Webcare"/></div>
+           </div>
+         </section>
 
           <footer>
             <div class="wrapper row">
