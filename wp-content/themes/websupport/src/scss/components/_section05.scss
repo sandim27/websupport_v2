@@ -1,7 +1,7 @@
 #section05 {
   background-color: $color-cream;
   padding: 68px 0;
-  @include breakpoint($wraper) {
+  @include breakpoint($wrapper) {
     padding: 40px 0;
   }
   .wrapper {
@@ -20,7 +20,7 @@
     @include display-flex;
     @include justify-content(center);
     @include align-items(center);
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       height: 100px;
       width: 100px;
     }
@@ -30,7 +30,7 @@
   }
   .about-step {
     padding: 0 60px;
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       padding: 0 30px;
     }
     @include breakpoint($tablet) {
@@ -42,7 +42,7 @@
       font-size: 36px;
       font-weight: $font-regular;
       margin: 0;
-      @include breakpoint($wraper) {
+      @include breakpoint($wrapper) {
         font-size: 24px;
       }
     }
@@ -50,7 +50,7 @@
       text-align: center;
       margin: 0 auto;
       display: block;
-      @include breakpoint($wraper) {
+      @include breakpoint($wrapper) {
         width: 80%;
       }
     }

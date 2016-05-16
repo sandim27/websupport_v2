@@ -234,27 +234,46 @@
              </div>
            </div>
            <div id="customers">
-             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-01.png" alt="Professional Webcare"/></div>
-             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-02.png" alt="Professional Webcare"/></div>
-             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-03.png" alt="Professional Webcare"/></div>
-             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-04.png" alt="Professional Webcare"/></div>
-             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-05.png" alt="Professional Webcare"/></div>
-             <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-06.png" alt="Professional Webcare"/></div>
+             <div class="wrapper">
+               <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-01.png" alt="Professional Webcare"/></div>
+               <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-02.png" alt="Professional Webcare"/></div>
+               <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-03.png" alt="Professional Webcare"/></div>
+               <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-04.png" alt="Professional Webcare"/></div>
+               <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-05.png" alt="Professional Webcare"/></div>
+               <div><img src="<?php echo get_template_directory_uri(); ?>/img/customers-06.png" alt="Professional Webcare"/></div>
+             </div>
            </div>
          </section>
 
+         <section id="section08">
+            <div class="wrapper">
+               <h2>Contact</h2>
+               <div class="form">
+                  <div class="first-part-contact">
+                    <input type="text" placeholder="Email"/>
+                    <input type="text" placeholder="Tel"/>
+                    <input type="text" placeholder="Web"/>
+                  </div>
+                  <div class="second-part-contact">
+                    <input type="text" placeholder="Subject"/>
+                    <input type="text" placeholder="Message"/>
+                    <input type="text"/>
+                  </div>
+                  <input type="submit" value="Sent" class="submit">
+               </div>
+            </div>
+         </section>
+
           <footer>
-            <div class="wrapper row">
-              <div class="col-md-4">
-                <div class="footer-logo">Professional webcare</div>
-              </div>
-              <div class="col-md-4">
-                <a href="/">8 800 200 600</a>
+            <div class="wrapper">
+              <a href="/" class="footer-logo"><span>Professional webcare</span></a>
+              <div class="footer-contact">
+                <a href="/"><i class="fa fa-phone" aria-hidden="true"> </i> 8 800 200 600</a>
                 <p>12110 Sunset Hills Rd #600, Reston, VA 20190</p>
               </div>
-              <div class="col-md-4">
-                <a href="/" class="linkedin">Linkedin</a>
-                <p>© 2015-2016 Professional WebCare</p>
+              <div class="footer-lnk">
+                <a href="/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <p>&copy; 2015-2016 Professional WebCare</p>
               </div>
             </div>
           </footer>
