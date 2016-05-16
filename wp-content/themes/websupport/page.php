@@ -27,7 +27,7 @@
                 <a href="/" class="read-more">Read more about</a>
               </div>
               <div class="col-md-4 section01form">
-                <h2>Let’s talk</h2>
+                <h2>Let's talk</h2>
                 <form>
                   <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -48,19 +48,19 @@
                 <div class="col-md-4 section02col">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/icon-repair.png"/>
                   <h3>Performance</h3>
-                  <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't’ happen to your site.</p>
+                  <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
                   <a href="/" class="buy-now">Buy now</a>
                 </div>
                 <div class="col-md-4 section02col">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/icon-cus.png"/>
                   <h3>Mobility</h3>
-                  <p>We’ll optimize or update your website to make it mobile ready and responsive on any devices, tablet or phone. Over 50% of all US web traffic came from mobile devices. If you're not able to serve your audience on mobile platforms, you are losing a huge chunk of your audience and lowering trust to your brand.</p>
+                  <p>We'll optimize or update your website to make it mobile ready and responsive on any devices, tablet or phone. Over 50% of all US web traffic came from mobile devices. If you're not able to serve your audience on mobile platforms, you are losing a huge chunk of your audience and lowering trust to your brand.</p>
                   <a href="/" class="buy-now">Buy now</a>
                 </div>
                 <div class="col-md-4 section02col">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/icon-set.png"/>
                   <h3>Security</h3>
-                  <p>Your website is a representation of your organization or your brand, and often your first interaction with the potential customers, which is very important to build trust and relationships. If your website isn’t safe and secure, those critical business relationships can be compromised. With our services, you can be sure they never will.</p>
+                  <p>Your website is a representation of your organization or your brand, and often your first interaction with the potential customers, which is very important to build trust and relationships. If your website isn't safe and secure, those critical business relationships can be compromised. With our services, you can be sure they never will.</p>
                   <a href="/" class="buy-now">Buy now</a>
                 </div>
               </div>
@@ -75,7 +75,7 @@
                   <div role="tabpanel" class="tab-pane active" id="q1">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/icon-repair-white.png"/>
                     <h3>Performance</h3>
-                    <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't’ happen to your site.</p>
+                    <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
                     <a href="/" class="buy-now">Buy now</a>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="q2">2</div>
@@ -100,14 +100,14 @@
                     <li role="presentation"><a href="#q5" aria-controls="q5" role="tab" data-toggle="tab">Can I convert my existing website into a responsive one?</a></li>
                     <li role="presentation"><a href="#q6" aria-controls="q6" role="tab" data-toggle="tab">Why should I upgrade my CMS to the latest version?</a></li>
                     <li role="presentation"><a href="#q7" aria-controls="q7" role="tab" data-toggle="tab">Why would anyone hack my site?</a></li>
-                    <li role="presentation"><a href="#q8" aria-controls="q8" role="tab" data-toggle="tab">I'm using WordPress, isn’t it already secure?</a></li>
+                    <li role="presentation"><a href="#q8" aria-controls="q8" role="tab" data-toggle="tab">I'm using WordPress, isn't it already secure?</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-4 section03support">
                 <h2>Support</h2>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/laptop.jpg"/>
-                <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't’ happen to your site.</p>
+                <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
                 <a href="/" class="purchase-now">Purchase now</a>
               </div>
             </div>
