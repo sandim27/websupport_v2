@@ -7,6 +7,7 @@ $(document).ready(function(){
   });
 
   $('#nav ul a').click(function(){
+    $('.nav-list').hide();
     var anchor = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(anchor).offset().top - 78 }, 300); return false;
   });

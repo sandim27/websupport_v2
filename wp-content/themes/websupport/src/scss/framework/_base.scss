@@ -28,6 +28,20 @@ a {
 h2 {
   font-size: 67px;
   font-weight: $font-thin;
+  margin-top: 0;
+
+  @include breakpoint($tablet-portrait) {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: $font-light;
+
+  @include breakpoint($tablet-portrait) {
+    font-size: 28px;
+  }
 }
 
 input,

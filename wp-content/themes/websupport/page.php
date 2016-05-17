@@ -13,7 +13,7 @@
                   <li><a href="#section01">About us</a></li>
                   <li><a href="#section02">Services</a></li>
                   <li><a href="#section03">FAQ</a></li>
-                  <li><a href="#section04">Contact Us</a></li>
+                  <li><a href="#section08">Contact Us</a></li>
                 </ul>
               </nav>
             </div>
@@ -88,7 +88,7 @@
                   <div role="tabpanel" class="tab-pane" id="q8">8</div>
                 </div>
                 <!-- Nav tabs -->
-                <div class="col-md-6">
+                <div class="tab-question col-md-6">
                   <h2>FAQ</h2>
                   <div class="row searcharea">
                     <input type="text" class="form-control" placeholder="Search"/>

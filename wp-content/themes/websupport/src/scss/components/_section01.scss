@@ -12,14 +12,19 @@
     padding-left: 7%;
     padding-right: 7%;
 
-    @include breakpoint($tablet) {
-      //padding-top: 140px;
+    @include breakpoint($mobile) {
+      padding: 20px 7% 20px;
     }
 
     h3 {
       font-size: 67px;
       font-weight: $font-extra-thin;
       line-height: 60px;
+
+      @include breakpoint($mobile) {
+        font-size: 46px;
+        line-height: 48px;
+      }
     }
 
     p {
@@ -27,6 +32,10 @@
       letter-spacing: .03rem;
       line-height: 25px;
       margin: 50px 0;
+
+      @include breakpoint($mobile) {
+        margin-bottom: 20px;
+      }
     }
 
     .read-more {
@@ -41,6 +50,14 @@
   .section01form {
     padding: 72px 50px;
     margin-top: 32px;
+
+    @include breakpoint($tablet) {
+      padding: 72px 50px 42px 50px;
+    }
+
+    @include breakpoint($mobile) {
+      padding: 30px 30px 10px 30px;
+    }
 
     .form-group {
       margin: 25px 0;
@@ -69,6 +86,11 @@
 
       &:hover {
         @include box-shadow(0 0 46px -1px rgba(35,152,130,0));
+      }
+
+      @include breakpoint($mobile) {
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
   }

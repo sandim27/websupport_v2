@@ -6,7 +6,7 @@ header {
   width: 100%;
   height: 78px;
 
-  //background: url(img/black-square.png);
+  background: url(img/black-square.png);
 
   /*background: rgba(0,0,0,1);
   background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.45) 53%, rgba(0,0,0,0) 96%, rgba(0,0,0,0) 100%);
@@ -63,7 +63,7 @@ header {
       @include breakpoint($tablet) {
         display: none;
         position: absolute;
-        top: 79px;
+        top: 78px;
         left: 0;
         width: 100%;
         padding-left: 0;
@@ -104,6 +104,10 @@ header {
             &:hover {
               background: $color-green-base;
             }
+          }
+
+          @include breakpoint($mobile) {
+            padding: 20px;
           }
         }
       }

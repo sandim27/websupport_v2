@@ -7911,7 +7911,18 @@ a {
 
 h2 {
   font-size: 67px;
-  font-weight: 200; }
+  font-weight: 200;
+  margin-top: 0; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 50px; } }
+
+h3 {
+  font-size: 36px;
+  font-weight: 300; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 28px; } }
 
 input,
 .form-control {
@@ -7967,6 +7978,7 @@ header {
   z-index: 9999;
   width: 100%;
   height: 78px;
+  background: url(img/black-square.png);
   /*background: rgba(0,0,0,1);
   background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.45) 53%, rgba(0,0,0,0) 96%, rgba(0,0,0,0) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(53%, rgba(0,0,0,0.45)), color-stop(96%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0)));
@@ -8017,7 +8029,7 @@ header {
       header #nav .nav-list {
         display: none;
         position: absolute;
-        top: 79px;
+        top: 78px;
         left: 0;
         width: 100%;
         padding-left: 0; } }
@@ -8050,6 +8062,9 @@ header {
             margin-left: 0; }
             header #nav .nav-list li a:hover {
               background: #239882; } }
+        @media (max-width: 480px) {
+          header #nav .nav-list li a {
+            padding: 20px; } }
     header #nav .nav-toggle {
       display: none;
       float: right;
@@ -8185,9 +8200,6 @@ section {
   @media (max-width: 992px) {
     section {
       padding: 60px 0 40px 0; } }
-  @media (max-width: 768px) {
-    section h2 {
-      font-size: 50px; } }
 
 #section01 {
   background-image: url(img/section01bg.jpg); }
@@ -8206,15 +8218,25 @@ section {
     padding-bottom: 100px;
     padding-left: 7%;
     padding-right: 7%; }
+    @media (max-width: 480px) {
+      #section01 .section01tagwrap {
+        padding: 20px 7% 20px; } }
     #section01 .section01tagwrap h3 {
       font-size: 67px;
       font-weight: 100;
       line-height: 60px; }
+      @media (max-width: 480px) {
+        #section01 .section01tagwrap h3 {
+          font-size: 46px;
+          line-height: 48px; } }
     #section01 .section01tagwrap p {
       font-weight: 300;
       letter-spacing: .03rem;
       line-height: 25px;
       margin: 50px 0; }
+      @media (max-width: 480px) {
+        #section01 .section01tagwrap p {
+          margin-bottom: 20px; } }
     #section01 .section01tagwrap .read-more {
       color: #29ebc8;
       font-size: 24px;
@@ -8224,6 +8246,12 @@ section {
   #section01 .section01form {
     padding: 72px 50px;
     margin-top: 32px; }
+    @media (max-width: 992px) {
+      #section01 .section01form {
+        padding: 72px 50px 42px 50px; } }
+    @media (max-width: 480px) {
+      #section01 .section01form {
+        padding: 30px 30px 10px 30px; } }
     #section01 .section01form .form-group {
       margin: 25px 0; }
     #section01 .section01form h2 {
@@ -8249,6 +8277,10 @@ section {
       #section01 .section01form button:hover {
         -webkit-box-shadow: 0 0 46px -1px rgba(35, 152, 130, 0);
         box-shadow: 0 0 46px -1px rgba(35, 152, 130, 0); }
+      @media (max-width: 480px) {
+        #section01 .section01form button {
+          margin-top: 20px;
+          margin-bottom: 20px; } }
 
 #section02 {
   color: #000;
@@ -8259,23 +8291,17 @@ section {
       #section02 .section02wrap {
         display: block; } }
   #section02 h2 {
-    font-size: 67px;
-    font-weight: 200;
     text-align: center;
-    margin-bottom: 85px; }
-    @media (max-width: 992px) {
-      #section02 h2 {
-        margin-top: 0; } }
+    margin: 0 0 85px; }
   #section02 .section02col {
     position: relative;
     text-align: center;
     margin-bottom: 100px;
     padding-bottom: 62px; }
-    #section02 .section02col:last-child {
-      margin-bottom: 50px; }
+    @media (max-width: 992px) {
+      #section02 .section02col:last-child {
+        margin-bottom: 50px; } }
     #section02 .section02col h3 {
-      font-size: 35px;
-      font-weight: 300;
       margin-top: 35px;
       margin-bottom: 0; }
     #section02 .section02col p {
@@ -8329,10 +8355,25 @@ section {
       list-style: none;
       margin-bottom: 20px; }
       #section03 .section03faq ul li.active > a {
+        position: relative;
         color: #39c0a7;
         background: none;
         border: none; }
+        #section03 .section03faq ul li.active > a:before {
+          color: #39c0a7; }
+        #section03 .section03faq ul li.active > a:after {
+          content: '';
+          color: #39c0a7;
+          width: 12px;
+          height: 24px;
+          position: absolute;
+          top: 10px;
+          left: -30px;
+          border-left: solid 12px #39c0a7;
+          border-bottom: solid 13px transparent;
+          border-top: solid 13px transparent; }
       #section03 .section03faq ul li a {
+        position: relative;
         color: #fff;
         font-size: 24px;
         font-weight: 200;
@@ -8341,6 +8382,13 @@ section {
         #section03 .section03faq ul li a:hover {
           background: none;
           border: none; }
+        #section03 .section03faq ul li a:before {
+          content: "\f105";
+          color: #ddd;
+          font-family: 'FontAwesome';
+          font-size: 24px;
+          position: absolute;
+          left: -10px; }
   #section03 .section03faq .buy-now {
     display: block;
     width: 100%;
@@ -8355,20 +8403,33 @@ section {
       text-decoration: none; }
   #section03 .section03faq .searcharea {
     padding: 0 30px; }
+    #section03 .section03faq .searcharea input {
+      font-size: 36px;
+      font-weight: 200; }
   #section03 .section03faq .tab-content {
     text-align: center;
-    margin-top: 120px; }
+    margin-top: 100px; }
     @media (max-width: 992px) {
       #section03 .section03faq .tab-content {
         margin-top: 30px;
+        margin-bottom: 60px; } }
+    @media (max-width: 480px) {
+      #section03 .section03faq .tab-content {
         margin-bottom: 30px; } }
     #section03 .section03faq .tab-content .tab-pane {
+      min-height: 750px;
       padding: 50px; }
+      @media (max-width: 480px) {
+        #section03 .section03faq .tab-content .tab-pane {
+          padding: 30px 20px; } }
     #section03 .section03faq .tab-content .active {
       background: #39c0a7; }
     #section03 .section03faq .tab-content p {
       font-weight: 300;
       padding: 25px 0; }
+  @media (max-width: 480px) {
+    #section03 .section03faq .tab-question {
+      padding: 0; } }
   #section03 .section03support {
     color: #000;
     text-align: center;
@@ -8401,6 +8462,8 @@ section {
       @media (max-width: 992px) {
         #section03 .section03support .section03support-inner {
           max-width: 100%; } }
+      #section03 .section03support .section03support-inner img {
+        max-width: 100%; }
     #section03 .section03support h2 {
       color: #239882;
       margin-bottom: 50px; }
@@ -8515,10 +8578,8 @@ section {
       #section05 .about-step {
         padding: 30px 0; } }
     #section05 .about-step h3 {
-      text-align: center;
       color: #000;
-      font-size: 36px;
-      font-weight: 400;
+      text-align: center;
       margin: 0; }
       @media (max-width: 1460px) {
         #section05 .about-step h3 {

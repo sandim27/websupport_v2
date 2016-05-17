@@ -45,12 +45,31 @@
         margin-bottom: 20px;
 
         &.active>a {
+          position: relative;
           color: $color-green;
           background: none;
           border: none;
+
+          &:before {
+            color: $color-green;
+          }
+
+          &:after {
+            content: '';
+            color: $color-green;
+            width: 12px;
+            height: 24px;
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            border-left: solid 12px $color-green;
+            border-bottom: solid 13px transparent;
+            border-top: solid 13px transparent;
+          }
         }
 
         a {
+          position: relative;
           color: $color-white;
           font-size: 24px;
           font-weight: $font-thin;
@@ -60,6 +79,15 @@
           &:hover {
             background: none;
             border: none;
+          }
+
+          &:before {
+            content: "\f105";
+            color: $color-gray;
+            font-family: 'FontAwesome';
+            font-size: 24px;
+            position: absolute;
+            left: -10px;
           }
         }
       }
@@ -83,19 +111,33 @@
 
     .searcharea {
       padding: 0 30px;
+
+      input {
+        font-size: 36px;
+        font-weight: $font-thin;
+      }
     }
 
     .tab-content {
       text-align: center;
-      margin-top: 120px;
+      margin-top: 100px;
 
       @include breakpoint($tablet) {
         margin-top: 30px;
+        margin-bottom: 60px;
+      }
+
+      @include breakpoint($mobile) {
         margin-bottom: 30px;
       }
 
       .tab-pane {
+        min-height: 750px;
         padding: 50px;
+
+        @include breakpoint($mobile) {
+          padding: 30px 20px;
+        }
       }
 
       .active {
@@ -105,6 +147,12 @@
       p {
         font-weight: $font-light;
         padding: 25px 0;
+      }
+    }
+
+    .tab-question {
+      @include breakpoint($mobile) {
+        padding: 0;
       }
     }
   }
@@ -144,6 +192,10 @@
       }
 
       @include breakpoint($tablet) {
+        max-width: 100%;
+      }
+
+      img {
         max-width: 100%;
       }
     }
