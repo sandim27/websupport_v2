@@ -55,25 +55,88 @@ header {
     float: right;
     margin: 27px 0;
 
-    li {
-      display: inline-block;
+    @include breakpoint($tablet) {
+      margin: 18px 0;
+    }
 
-      a {
-        color: $color-white;
-        font-size: 18px;
-        font-weight: $font-light;
-        margin-left: 70px;
-        @include opacity(.7);
+    .nav-list {
+      @include breakpoint($tablet) {
+        display: none;
+        position: absolute;
+        top: 79px;
+        left: 0;
+        width: 100%;
+        padding-left: 0;
+      }
 
-        &:hover {
+      li {
+        display: inline-block;
+        text-align: center;
+
+        @include breakpoint($tablet) {
+          display: block;
+          background: $color-black;
+        }
+
+        a {
           color: $color-white;
-          text-decoration: none;
-          @include opacity(1);
-        }
+          font-size: 18px;
+          font-weight: $font-light;
+          margin-left: 70px;
+          @include opacity(.7);
 
-        &:focus {
-          color: $color-green-light;
+          &:hover {
+            color: $color-white;
+            text-decoration: none;
+            @include opacity(1);
+          }
+
+          &:focus {
+            color: $color-green-light;
+          }
+
+          @include breakpoint($tablet) {
+            display: block;
+            font-size: 24px;
+            padding: 15px;
+            margin-left: 0;
+
+            &:hover {
+              background: $color-green-base;
+            }
+          }
         }
+      }
+    }
+
+    .nav-toggle {
+      display: none;
+      float: right;
+      color: $color-white;
+      font-size: 23px;
+      border: 1px solid $color-white;
+      padding: 10px;
+      @include border-radius(4px)
+      @include opacity(.7);
+
+      &:hover {
+        color: $color-white;
+        text-decoration: none;
+        border: 1px solid $color-white;
+        @include opacity(1);
+      }
+
+      &:focus {
+        text-decoration: none;
+      }
+
+      @include breakpoint($tablet) {
+        display: block;
+      }
+
+      i {
+        display: block;
+        line-height: 17px;
       }
     }
   }

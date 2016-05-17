@@ -72,7 +72,7 @@
                 <!-- Nav tabs -->
                 <div class="col-md-6">
                   <h2>FAQ</h2>
-                  <div class="row">
+                  <div class="row searcharea">
                     <input type="text" class="form-control" placeholder="Search"/>
                   </div>
                   <ul class="nav nav-tabs" role="tablist">

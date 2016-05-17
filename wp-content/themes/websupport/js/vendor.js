@@ -37,9 +37,18 @@ $(document).ready(function(){
     prevButton: '.swiper-button-prev'
   });
 
-  $('#nav a').click(function(){
+  $('#nav ul a').click(function(){
     var anchor = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(anchor).offset().top - 78 }, 300); return false;
   });
 
+  $('.nav-toggle').click(function() {
+    $('.nav-list').slideToggle(200);
+  });
+});
+
+$(window).resize(function() {
+  if (window.innerWidth > 992) {
+    $('.nav-list').show();
+  };
 });

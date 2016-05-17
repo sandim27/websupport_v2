@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 
-gulp.task('serve', ['copy','sass','css','scripts'], function() {
+gulp.task('serve', ['copy','sass','css','scripts','scriptMain'], function() {
 
     browserSync.init({
         proxy: "websupport2:81"
@@ -19,6 +19,7 @@ gulp.task('serve', ['copy','sass','css','scripts'], function() {
 
     gulp.watch("./src/scss/**/*.scss", ['sass']);
     gulp.watch("./src/js/**/*.js", ['scripts']);
+    gulp.watch("./src/js/**/*.js", ['scriptMain']);
     gulp.watch("*.php").on('change', browserSync.reload);
     gulp.watch("js/*.js").on('change', browserSync.reload);
 });
@@ -61,8 +62,7 @@ gulp.task('scripts', function() {
       './bower_components/Swiper/dist/js/swiper.min.js',
       './src/js/classie.js',
       './src/js/modernizr.custom.js',
-      './src/js/map.js',
-      './src/js/main.js'
+      './src/js/map.js'
     ])
       .pipe(changed('js/'))
       .pipe(concat('vendor.js'))
@@ -70,6 +70,18 @@ gulp.task('scripts', function() {
       .pipe(uglify())
       .pipe(rename('vendor.min.js'))
       .pipe(gulp.dest('js/'))
+});
+
+gulp.task('scriptMain', function() {
+  return gulp.src([
+    './src/js/main.js'
+  ])
+    .pipe(changed('js/'))
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('js/'))
+    .pipe(uglify())
+    .pipe(rename('main.min.js'))
+    .pipe(gulp.dest('js/'))
 });
 
 gulp.task('default', ['serve']);

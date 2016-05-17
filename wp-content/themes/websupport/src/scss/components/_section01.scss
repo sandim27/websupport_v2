@@ -12,6 +12,10 @@
     padding-left: 7%;
     padding-right: 7%;
 
+    @include breakpoint($tablet) {
+      //padding-top: 140px;
+    }
+
     h3 {
       font-size: 67px;
       font-weight: $font-extra-thin;
@@ -60,10 +64,10 @@
       transition: all 0.3s ease;
       border: none;
       @include border-radius(0);
-      @include box-shadow(0 0 46px -1px rgba(35,152,130,.35));
+      @include box-shadow(0 4px 40px 0px $color-green-base);
+      //@include box-shadow(0 0 46px -1px rgba(35,152,130,.35));
 
       &:hover {
-        //background-color: $color-green;
         @include box-shadow(0 0 46px -1px rgba(35,152,130,0));
       }
     }

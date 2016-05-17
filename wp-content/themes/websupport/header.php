@@ -34,14 +34,15 @@
 			<span>Professional Webcare</span>
 		  </a>
 
-		  <nav id="nav">
-			<ul>
-			  <li><a href="#section01">About us</a></li>
-			  <li><a href="#section02">Services</a></li>
-			  <li><a href="#section03">FAQ</a></li>
-			  <li><a href="#section04">Contact Us</a></li>
-			</ul>
-		  </nav>
+		   <nav id="nav">
+			 <a href="javascript:" class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			 <ul class="nav-list">
+			   <li><a href="#section01">About us</a></li>
+			   <li><a href="#section02">Services</a></li>
+			   <li><a href="#section03">FAQ</a></li>
+			   <li><a href="#section04">Contact Us</a></li>
+			 </ul>
+		   </nav>
 
 		</div>
 

@@ -18,14 +18,22 @@
       display: block;
       height: 104px;
       width: 346px;
+      font-weight: $font-light;
       text-align: center;
       margin: 0 auto;
       background-color: $color-green-base;
-      @include box-shadow(0 $color-white);
+      border: none;
+      //@include box-shadow(0 $color-white);
+      @include box-shadow(0 4px 40px 0px $color-green-base);
       @include transition(all 0.3s ease);
 
-      &:hover{
-        @include box-shadow(0 4px 40px 0px $color-green-base);
+      &:hover {
+        //@include box-shadow(0 4px 40px 0px $color-green-base);
+        @include box-shadow(0 0 46px -1px rgba(35,152,130,0));
+      }
+
+      &:focus {
+        border: none;
       }
 
       @include breakpoint($tablet-portrait) {
@@ -92,6 +100,7 @@
     input {
       width: 100%;
       margin-bottom: 34px;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 
       @include breakpoint($tablet-portrait) {
         margin-bottom: 20px;

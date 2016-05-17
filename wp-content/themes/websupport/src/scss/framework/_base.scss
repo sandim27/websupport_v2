@@ -13,7 +13,7 @@ body {
   font-family: $font-family-base;
   font-weight: $font-regular;
   font-size: $font-size-base;
-  background-color: $color-white;
+  background: #1b201e;
   overflow-x: hidden;
 }
 
@@ -74,6 +74,10 @@ textarea {
   max-width: 1460px;
   margin: 0 auto;
   padding: 0 40px;
+
+  @include breakpoint($tablet) {
+    padding: 0 20px;
+  }
 }
 
 /*.btn-green {

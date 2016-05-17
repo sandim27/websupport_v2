@@ -1,4 +1,6 @@
 #section04 {
+  background: $color-white;
+
   .wrapper {
     @include display-flex;
     @include flex-flow(row wrap);
