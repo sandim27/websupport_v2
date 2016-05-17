@@ -1,9 +1,11 @@
 #section05 {
   background-color: $color-cream;
   padding: 68px 0;
+
   @include breakpoint($wrapper) {
     padding: 40px 0;
   }
+
   .wrapper {
     @include display-flex;
     @include justify-content(center);
@@ -12,6 +14,7 @@
       @include align-items(center);
     }
   }
+
   .green-step {
     background-color: $color-green-base;
     height: 120px;
@@ -20,47 +23,57 @@
     @include display-flex;
     @include justify-content(center);
     @include align-items(center);
+
     @include breakpoint($wrapper) {
       height: 100px;
       width: 100px;
     }
+
     img {
       display: block;
     }
   }
+
   .about-step {
     padding: 0 60px;
+
     @include breakpoint($wrapper) {
       padding: 0 30px;
     }
+
     @include breakpoint($tablet) {
       padding: 30px 0;
     }
+
     h3 {
       text-align: center;
       color: $color-black;
       font-size: 36px;
       font-weight: $font-regular;
       margin: 0;
+
       @include breakpoint($wrapper) {
         font-size: 24px;
       }
     }
+
     img {
       text-align: center;
       margin: 0 auto;
       display: block;
+
       @include breakpoint($wrapper) {
         width: 80%;
       }
     }
+
     p {
-      text-align: center;
       color: $color-black;
-      font-size: 16px;
+      font-size: $font-size-base;
       font-weight: $font-regular;
-      @include opacity(0.5);
+      text-align: center;
       margin: 0;
+      @include opacity(0.5);
     }
   }
 }
