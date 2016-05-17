@@ -7913,7 +7913,7 @@ h2 {
   font-size: 67px;
   font-weight: 200; }
 
-input,
+input, textarea,
 .form-control {
   color: #fff;
   font-size: 36px;
@@ -7932,7 +7932,7 @@ input,
   border-radius: 0;
   -webkit-box-shadow: 0;
   box-shadow: 0; }
-  input:focus,
+  input:focus, textarea:focus,
   .form-control:focus {
     border-bottom: 1px solid #fff; }
 
@@ -8829,7 +8829,9 @@ section {
   #section08 h2 {
     text-align: center;
     margin: 0 0 40px 0; }
-  #section08 .form .submit {
+  #section08 textarea {
+    height: 60px; }
+  #section08 .submit {
     clear: both;
     display: block;
     height: 104px;
@@ -8844,13 +8846,13 @@ section {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    #section08 .form .submit:hover {
+    #section08 .submit:hover {
       -webkit-box-shadow: 0 0 46px -1px rgba(35, 152, 130, 0);
       box-shadow: 0 0 46px -1px rgba(35, 152, 130, 0); }
-    #section08 .form .submit:focus {
+    #section08 .submit:focus {
       border: none; }
     @media (max-width: 768px) {
-      #section08 .form .submit {
+      #section08 .submit {
         height: 60px;
         width: 200px;
         font-size: 24px; } }
