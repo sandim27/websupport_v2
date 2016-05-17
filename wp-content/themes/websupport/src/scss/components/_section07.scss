@@ -48,6 +48,9 @@
     height: auto;
     padding-bottom: 30px;
   }
+  @include breakpoint($tablet) {
+    padding-top: 60px;
+  }
   .wrapper{
     position: relative;
     @include breakpoint($mobile) {
