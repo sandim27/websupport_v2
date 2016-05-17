@@ -1,23 +1,6 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		 <header>
-            <div class="wrapper">
-              <a href="/" id="logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Professional Webcare"/>
-                <span>Professional Webcare</span>
-              </a>
-              <nav id="nav">
-                <ul>
-                  <li><a href="#section01">About us</a></li>
-                  <li><a href="#section02">Services</a></li>
-                  <li><a href="#section03">FAQ</a></li>
-                  <li><a href="#section04">Contact Us</a></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-
           <section id="section01">
             <div class="wrapper row">
               <div class="col-md-8 section01tagwrap">
@@ -118,30 +101,7 @@
           <section id="section04">
             <div class="wrapper">
               <h2>Direction</h2>
-              <article>
-                <h3><i class="fa fa-check" aria-hidden="true"></i>Template Design</h3>
-                <p>We use a powerful template framework, adding logic, functions, and structure for mobile layouts.</p>
-              </article>
-              <article>
-                <h3><i class="fa fa-check" aria-hidden="true"></i>Full Website Development</h3>
-                <p>We build websites from scrath with extreme functionality, flat rate quotes and warrantied </p>
-              </article>
-              <article>
-                <h3><i class="fa fa-check" aria-hidden="true"></i>Website Speed Optimization</h3>
-                <p>Optimize your website for speed, faster load times, improved visitor experience, and reduced bandwidth.</p>
-              </article>
-              <article>
-                <h3><i class="fa fa-check" aria-hidden="true"></i>Search Engine Optimization</h3>
-                <p>Search Engine Optimization built into the very foundation of your template</p>
-              </article>
-              <article>
-                <h3><i class="fa fa-check" aria-hidden="true"></i>Malware Removal And Security</h3>
-                <p>Some idiot took your website down and now you have a google malware penalty and your site is gone.</p>
-              </article>
-              <article>
-                <h3><i class="fa fa-check" aria-hidden="true"></i>Mobile App Development</h3>
-                <p>70% off standard mobile app pricing. Download from Google Play and App Store.</p>
-              </article>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('section04') ) { ?> <?php } ?>
             </div>
           </section>
 
@@ -165,31 +125,9 @@
 
           <section id="section06">
             <div class="wrapper">
+             <h2>Privilege</h2>
               <div class="wrap06">
-                <article>
-                  <h3><img src="<?php echo get_template_directory_uri(); ?>/img/icon01-sec06.png" alt="Professional Webcare"/>Mobile Template Design</h3>
-                  <p>We use a powerful template framework, adding logic, functions, and structure for mobile layouts.</p>
-                </article>
-                <article>
-                  <h3><img src="<?php echo get_template_directory_uri(); ?>/img/icon04-sec06.png" alt="Professional Webcare"/>Mobile Template Design</h3>
-                  <p>We use a powerful template framework, adding logic, functions, and structure for mobile layouts.</p>
-                </article>
-                <article>
-                  <h3><img src="<?php echo get_template_directory_uri(); ?>/img/icon02-sec06.png" alt="Professional Webcare"/>Search Engine Optimization</h3>
-                  <p>Search Engine Optimization built into the very foundation of your template</p>
-                </article>
-                <article>
-                  <h3><img src="<?php echo get_template_directory_uri(); ?>/img/icon05-sec06.png" alt="Professional Webcare"/>Search Engine Optimization</h3>
-                  <p>Search Engine Optimization built into the very foundation of your template</p>
-                </article>
-                <article>
-                  <h3><img src="<?php echo get_template_directory_uri(); ?>/img/icon03-sec06.png" alt="Professional Webcare"/>Search Engine Optimization</h3>
-                  <p>Search Engine Optimization built into the very foundation of your template</p>
-                </article>
-                <article>
-                  <h3><img src="<?php echo get_template_directory_uri(); ?>/img/icon06-sec06.png" alt="Professional Webcare"/>Search Engine Optimization</h3>
-                  <p>Search Engine Optimization built into the very foundation of your template</p>
-                </article>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('section06') ) { ?> <?php } ?>
                </div>
             </div>
           </section>
@@ -200,34 +138,7 @@
                <h2>Just Fixed</h2>
                <div class="swiper-container">
                  <div class="swiper-wrapper">
-
-                   <div class="swiper-slide">
-                     <div class="slide-contayner">
-                       <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
-                       <h3>Henry Mann</h3>
-                       <h4>Hair Genesis</h4>
-                       <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
-                     </div>
-                   </div>
-
-                   <div class="swiper-slide">
-                     <div class="slide-contayner">
-                       <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
-                       <h3>Henry Mann</h3>
-                       <h4>Hair Genesis</h4>
-                       <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
-                     </div>
-                   </div>
-
-                   <div class="swiper-slide">
-                     <div class="slide-contayner">
-                       <img src="<?php echo get_template_directory_uri(); ?>/img/customer-sec07.png" alt="Professional Webcare"/>
-                       <h3>Henry Mann</h3>
-                       <h4>Hair Genesis</h4>
-                       <p>My Website Repair has provided me with very fast web hosting as well as support when I need to update my website or make changes which are beyond me knowledge. Excellent support and service!</p>
-                     </div>
-                   </div>
-
+                      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('swiper-slides') ) { ?> <?php } ?>
                  </div>
                </div>
                <div class="swiper-pagination"></div>
@@ -265,21 +176,5 @@
                </div>
             </div>
          </section>
-
-          <footer>
-            <div class="wrapper">
-              <a href="/" class="footer-logo"><span>Professional webcare</span></a>
-              <div class="footer-contact">
-                <a href="/"><i class="fa fa-phone" aria-hidden="true"> </i> 8 800 200 600</a>
-                <p>12110 Sunset Hills Rd #600, Reston, VA 20190</p>
-              </div>
-              <div class="footer-lnk">
-                <a href="/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <p>&copy; 2015-2016 Professional WebCare</p>
-              </div>
-            </div>
-          </footer>
-
-          <script src="<?php echo get_template_directory_uri(); ?>/js/vendor.min.js"></script>
 	</main>
 <?php get_footer(); ?>

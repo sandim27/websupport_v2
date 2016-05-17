@@ -25,3 +25,26 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+	 <header>
+
+		<div class="wrapper">
+
+		  <a href="<?php echo home_url(); ?>" id="logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Professional Webcare"/>
+			<span>Professional Webcare</span>
+		  </a>
+
+		  <nav id="nav">
+			<ul>
+			  <li><a href="#section01">About us</a></li>
+			  <li><a href="#section02">Services</a></li>
+			  <li><a href="#section03">FAQ</a></li>
+			  <li><a href="#section04">Contact Us</a></li>
+			</ul>
+		  </nav>
+
+		</div>
+
+	  </header>
+
+
