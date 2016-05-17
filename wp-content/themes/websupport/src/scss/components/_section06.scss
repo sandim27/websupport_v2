@@ -3,14 +3,21 @@
   max-width: 1920px;
   margin: 0 auto;
 
+  h2{
+    color: $color-black;
+    text-align: center;
+    margin: 0 0 60px 0;
+    @include breakpoint($tablet) {
+      margin: 0 0 40px 0;
+    }
+  }
+
   @include breakpoint($wrapper) {
     padding: 60px 0 0 0;
     background: $color-white;
   }
 
   .wrapper {
-    padding-top: 120px;
-
     @include breakpoint($wrapper) {
       padding: 0;
     }
@@ -49,7 +56,73 @@
     @include breakpoint($mobile) {
       padding: 0 20px;
     }
+    h3 {
+      &:before {
+        content: '';
+        margin: 0 10px 0 0;
+        display: inline-block;
+        vertical-align: middle;
+        @include breakpoint($mobile) {
+          width: 24px;
+        }
+      }
+    }
+    &:first-child {
+      h3 {
+        &:before {
+          height:38px;
+          width:31px;
+          background: url(img/icon01-sec06.png) no-repeat;
+        }
+      }
+    }
+    &:nth-child(2){
+      h3 {
+        &:before {
+          height:37px;
+          width:29px;
+          background: url(img/icon04-sec06.png) no-repeat;
+        }
+      }
+    }
+    &:nth-child(3){
+      h3 {
+        &:before {
+          height:37px;
+          width:33px;
+          background: url(img/icon02-sec06.png) no-repeat;
+        }
+      }
+    }
+    &:nth-child(4){
+      h3 {
+        &:before {
+          height:30px;
+          width:34px;
+          background: url(img/icon05-sec06.png) no-repeat;
+        }
+      }
+    }
+    &:nth-child(5){
+      h3 {
+        &:before {
+          height:35px;
+          width:37px;
+          background: url(img/icon03-sec06.png) no-repeat;
+        }
+      }
+    }
+    &:nth-child(6){
+      h3 {
+        &:before {
+          height:38px;
+          width:29px;
+          background: url(img/icon06-sec06.png) no-repeat;
+        }
+      }
+    }
   }
+
 
   h3 {
     color: $color-black;
@@ -71,13 +144,5 @@
     color: $color-black;
     font-size: $font-size-base;
     font-weight: $font-regular;
-  }
-
-  img {
-    margin: 0 10px 0 0;
-
-    @include breakpoint($mobile) {
-      width: 24px;
-    }
   }
 }
