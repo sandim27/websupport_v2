@@ -1,11 +1,11 @@
 #section06 {
-  background: url(img/section06bg.jpg) right center no-repeat;
+  background: url(img/section06bg.jpg) right center no-repeat $color-white;
   max-width: 1920px;
   margin: 0 auto;
 
   @include breakpoint($wrapper) {
     padding: 60px 0 0 0;
-    background: none;
+    background: $color-white;
   }
 
   .wrapper {

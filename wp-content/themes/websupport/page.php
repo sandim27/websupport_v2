@@ -8,7 +8,8 @@
                 <span>Professional Webcare</span>
               </a>
               <nav id="nav">
-                <ul>
+                <a href="javascript:" class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <ul class="nav-list">
                   <li><a href="#section01">About us</a></li>
                   <li><a href="#section02">Services</a></li>
                   <li><a href="#section03">FAQ</a></li>
@@ -89,7 +90,7 @@
                 <!-- Nav tabs -->
                 <div class="col-md-6">
                   <h2>FAQ</h2>
-                  <div class="row">
+                  <div class="row searcharea">
                     <input type="text" class="form-control" placeholder="Search"/>
                   </div>
                   <ul class="nav nav-tabs" role="tablist">
