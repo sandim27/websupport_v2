@@ -105,10 +105,12 @@
                 </div>
               </div>
               <div class="col-md-4 section03support">
-                <h2>Support</h2>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/laptop.jpg"/>
-                <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
-                <a href="/" class="purchase-now">Purchase now</a>
+                <div class="section03support-inner">
+                  <h2>Support</h2>
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/laptop.jpg"/>
+                  <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
+                  <a href="/" class="purchase-now">Purchase now</a>
+                </div>
               </div>
             </div>
           </section>

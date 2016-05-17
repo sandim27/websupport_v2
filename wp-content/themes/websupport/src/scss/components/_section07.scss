@@ -8,12 +8,12 @@
   @include flex-flow(row wrap);
   @include justify-content(space-around);
   @include align-items(center);
-  @include breakpoint($wraper) {
+  @include breakpoint($wrapper) {
     padding: 0 10px;
   }
   div{
     text-align: center;
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       padding: 30px 0px;
       @include flexbox((
         flex-basis: 30%
@@ -42,7 +42,7 @@
   background: url(img/section07bg.jpg) no-repeat;
   background-size: cover;
   padding-top: 80px;
-  @include breakpoint($wraper) {
+  @include breakpoint($wrapper) {
     height: auto;
     padding-bottom: 30px;
   }
@@ -62,7 +62,7 @@
     max-width: 1056px;
     height: 435px;
     padding-top: 60px;
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       max-width: 90%;
     }
   }
@@ -84,7 +84,7 @@
       height: 30px;
       width: 54px;
       margin: 0 auto;
-      @include breakpoint($wraper) {
+      @include breakpoint($wrapper) {
 
       }
     }
@@ -110,7 +110,7 @@
       margin: 0 0 26px 0;
       font-size: 16px;
       @include opacity(0.5);
-      @include breakpoint($wraper) {
+      @include breakpoint($wrapper) {
         font-size: 14px;
       }
       @include breakpoint($mobile) {
@@ -125,7 +125,7 @@
       display: block;
       overflow: hidden;
       height: 100px;
-      @include breakpoint($wraper) {
+      @include breakpoint($wrapper) {
         height: 136px;
       }
       @include breakpoint($tablet) {
@@ -152,7 +152,7 @@
   .swiper-pagination{
     position: relative;
     top: 120px;
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       display: none;
     }
     span{

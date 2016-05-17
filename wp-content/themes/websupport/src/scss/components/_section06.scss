@@ -2,14 +2,14 @@
   background: url(img/section06bg.jpg) right center no-repeat;
   max-width: 1920px;
   margin: 0 auto;
-  @include breakpoint($wraper) {
+  @include breakpoint($wrapper) {
     padding:60px 0 0 0;
     background: none;
   }
   .wrapper {
 
     padding-top: 120px;
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       padding: 0;
     }
   }
@@ -20,7 +20,7 @@
             justify-content:space-between,
             flex-wrap: wrap
     ));
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       background: none;
       width: 100%;
       @include flexbox((
@@ -34,7 +34,7 @@
     @include flexbox((
       flex-basis:361px
     ));
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       padding: 0 30px;
       margin-bottom: 30px;
     }
@@ -47,7 +47,7 @@
     font-size: 24px;
     font-weight: $font-regular;
     margin: 0 0 10px 0;
-    @include breakpoint($wraper) {
+    @include breakpoint($wrapper) {
       font-size: 22px;
     }
     @include breakpoint($mobile) {
