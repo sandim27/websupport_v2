@@ -14,6 +14,7 @@ body {
   font-weight: $font-regular;
   font-size: $font-size-base;
   background-color: $color-white;
+  overflow-x: hidden;
 }
 
 body > section {

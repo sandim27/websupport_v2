@@ -2,17 +2,20 @@
   background: url(img/section06bg.jpg) right center no-repeat;
   max-width: 1920px;
   margin: 0 auto;
+
   @include breakpoint($wrapper) {
-    padding:60px 0 0 0;
+    padding: 60px 0 0 0;
     background: none;
   }
-  .wrapper {
 
+  .wrapper {
     padding-top: 120px;
+
     @include breakpoint($wrapper) {
       padding: 0;
     }
   }
+
   .wrap06 {
     width: 820px;
     @include display-flex;
@@ -20,48 +23,59 @@
             justify-content:space-between,
             flex-wrap: wrap
     ));
+
     @include breakpoint($wrapper) {
       background: none;
       width: 100%;
+
       @include flexbox((
               justify-content:space-around,
               flex-wrap: wrap
       ));
     }
   }
+
   article {
     margin-bottom: 60px;
     @include flexbox((
       flex-basis:361px
     ));
+
     @include breakpoint($wrapper) {
       padding: 0 30px;
       margin-bottom: 30px;
     }
+
     @include breakpoint($mobile) {
       padding: 0 20px;
     }
   }
+
   h3 {
     color: $color-black;
     font-size: 24px;
     font-weight: $font-regular;
     margin: 0 0 10px 0;
+
     @include breakpoint($wrapper) {
       font-size: 22px;
     }
+
     @include breakpoint($mobile) {
-      font-size: 16px;
+      font-size: $font-size-base;
       font-weight: $font-bold;
     }
   }
+
   p {
     color: $color-black;
-    font-size: 16px;
+    font-size: $font-size-base;
     font-weight: $font-regular;
   }
+
   img {
     margin: 0 10px 0 0;
+
     @include breakpoint($mobile) {
       width: 24px;
     }

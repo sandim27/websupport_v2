@@ -1,11 +1,21 @@
 #section03 {
   background-size: cover;
-  
+
   .wrapper {
     display: flex;
+    padding: 0;
+
+    @include breakpoint($tablet) {
+      display: block;
+    }
   }
 
   .section03faq {
+    @include breakpoint($tablet) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     h2 {
       text-align: center;
     }
@@ -67,6 +77,11 @@
       text-align: center;
       margin-top: 120px;
 
+      @include breakpoint($tablet) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
       .tab-pane {
         padding: 50px;
       }
@@ -87,19 +102,45 @@
     text-align: center;
     background-color: $color-bright-gray;
     padding-top: 90px;
+    padding-bottom: 90px;
     margin-top: -90px;
     margin-bottom: -40px;
-    /*width: 9000px;
-    margin-right: -9000px;*/
+    margin-right: -9000px;
+    width: 9000px;
 
-    &:after {
-      display: table;
-      content: '';
-      background: red;
+    @include breakpoint($wrapper) {
+      width: auto;
+      padding-right: 40px;
+      margin-right: 0;
+    }
+
+    @include breakpoint($tablet) {
+      width: 100%;
+      padding-right: 0;
+      margin-top: 0;
+      margin-right: 0;
+    }
+
+    .section03support-inner {
+      max-width: 450px;
+      padding: 0 30px;
+
+      @include breakpoint($desktop) {
+        padding-right: 0;
+      }
+
+      @include breakpoint($tablet) {
+        max-width: 100%;
+      }
     }
 
     h2 {
       color: $color-green-base;
+      margin-bottom: 50px;
+    }
+
+    p {
+      padding: 25px 0;
     }
 
     .purchase-now {

@@ -1,5 +1,6 @@
 footer {
   background: $color-black;
+
   .wrapper {
     @include display-flex;
     @include flexbox((
@@ -8,6 +9,7 @@ footer {
             align-items: center
     ));
     min-height: 80px;
+
     @include breakpoint($tablet) {
       padding: 30px 0;
     }
@@ -16,8 +18,8 @@ footer {
   .footer-logo{
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
-    padding-left:46px;
+    color: $color-white;
+    padding-left: 46px;
     display: block;
     height: 41px;
     background: url(img/logo-footer.png) center left no-repeat;
@@ -26,40 +28,50 @@ footer {
         flex-wrap: wrap,
         align-items: center
     ));
-    span{
+
+    span {
       line-height: 18px;
       display: block;
     }
+
     @include breakpoint($tablet) {
-      margin: 0 auto;@include breakpoint($tablet) {
-      text-align: center;
-      margin-bottom: 26px;
-    }
+      margin: 0 auto;
+
+      @include breakpoint($tablet) {
+        text-align: center;
+        margin-bottom: 26px;
+      }
     }
   }
-  .footer-contact{
+
+  .footer-contact {
     @include breakpoint($tablet) {
       width: 100%;
     }
-    a{
+
+    a {
       font-size: 20px;
-      color: #fff;
-      i{
+      color: $color-white;
+
+      i {
         @include opacity(0.5);
         @include transition(all 0.3s ease);
         margin-right: 4px;
       }
-      &:hover i{
+
+      &:hover i {
         @include opacity(1);
       }
+
       @include breakpoint($tablet) {
         text-align: center;
         display: block;
         margin-bottom: 10px;
       }
     }
-    p{
-      font-size: 16px;
+
+    p {
+      font-size: $font-size-base;
       font-weight: $font-regular;
       @include opacity(0.5);
       @include breakpoint($tablet) {
@@ -71,32 +83,37 @@ footer {
     }
   }
 
-  .footer-lnk{
+  .footer-lnk {
     @include breakpoint($tablet) {
       width: 100%;
     }
-    a{
+
+    a {
       font-size: 20px;
-      color: #fff;
+      color: $color-white;
       text-align: right;
       @include opacity(0.5);
       @include transition(all 0.3s ease);
       display: block;
       float: right;
-      &:hover{
+
+      &:hover {
         @include opacity(1);
       }
+
       @include breakpoint($tablet) {
         text-align: center;
         float: none;
         margin-bottom: 10px;
       }
     }
-    p{
-      font-size: 16px;
+
+    p {
+      font-size: $font-size-base;
       font-weight: $font-light;
-      @include opacity(0.5);
       clear: both;
+      @include opacity(0.5);
+
       @include breakpoint($tablet) {
         font-size: 14px;
         text-align: center;
@@ -104,5 +121,4 @@ footer {
       }
     }
   }
-
 }
