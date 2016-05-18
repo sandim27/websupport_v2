@@ -33,6 +33,10 @@ h2 {
   @include breakpoint($tablet-portrait) {
     font-size: 50px;
   }
+
+  @include breakpoint($mobile) {
+    font-size: 46px;
+  }
 }
 
 h3 {
@@ -64,6 +68,11 @@ input,textarea,
   &:focus {
     border-bottom: 1px solid $color-white;
   }
+
+  @include breakpoint($mobile) {
+    font-size: 24px;
+    line-height: inherit;
+  }
 }
 
 input,
@@ -91,6 +100,10 @@ textarea {
 
   @include breakpoint($tablet) {
     padding: 0 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 0 15px;
   }
 }
 

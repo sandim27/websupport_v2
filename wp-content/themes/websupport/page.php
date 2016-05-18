@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<main role="main">
-	
+
 		 <header>
             <div class="wrapper">
               <a href="/" id="logo">
@@ -93,6 +93,7 @@
                   <h2>FAQ</h2>
                   <div class="row searcharea">
                     <input type="text" class="form-control" placeholder="Search"/>
+                    <a href="javascript:" class="searchbtn"><i class="fa fa-search" aria-hidden="true"></i></a>
                   </div>
                   <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#q1" aria-controls="q1" role="tab" data-toggle="tab">Why do I need my website working on mobile?</a></li>

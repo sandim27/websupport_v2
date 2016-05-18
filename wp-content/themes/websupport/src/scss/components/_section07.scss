@@ -6,6 +6,10 @@
   padding: 90px 0 70px 0;
   background-color: $color-white;
 
+  @include breakpoint($mobile) {
+    padding: 30px 0;
+  }
+
   .wrapper {
     @include display-flex;
     @include flex-flow(row wrap);

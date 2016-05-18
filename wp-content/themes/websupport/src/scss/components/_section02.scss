@@ -13,6 +13,10 @@
   h2 {
     text-align: center;
     margin: 0 0 85px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 60px;
+    }
   }
 
   .section02col {
@@ -21,9 +25,17 @@
     margin-bottom: 100px;
     padding-bottom: 62px;
 
+    @include breakpoint($mobile) {
+      margin-bottom: 70px;
+    }
+
     &:last-child {
       @include breakpoint($tablet) {
         margin-bottom: 50px;
+      }
+
+      @include breakpoint($mobile) {
+        margin-bottom: 0;
       }
     }
 
@@ -34,6 +46,10 @@
 
     p {
       padding: 25px;
+
+      @include breakpoint($mobile) {
+        padding: 15px 10px;
+      }
     }
   }
 
@@ -53,6 +69,10 @@
 
     &:hover {
       text-decoration: none;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 20px;
     }
   }
 }

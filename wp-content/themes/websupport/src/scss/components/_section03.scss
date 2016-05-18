@@ -11,9 +11,10 @@
   }
 
   .section03faq {
+    display: flex;
+
     @include breakpoint($tablet) {
-      display: flex;
-      flex-direction: column-reverse;
+       flex-direction: column-reverse;
     }
 
     h2 {
@@ -21,6 +22,10 @@
 
       @include breakpoint($tablet) {
         margin-top: 0;
+      }
+
+      @include breakpoint($mobile) {
+        margin-bottom: 30px;
       }
     }
 
@@ -36,13 +41,22 @@
       border: none;
 
       @include breakpoint($tablet) {
+        margin-left: 10px;
         margin-bottom: 0;
+      }
+
+      @include breakpoint($mobile) {
+        margin-top: 30px;
       }
 
       li {
         float: none;
         list-style: none;
         margin-bottom: 20px;
+
+        @include breakpoint($tablet) {
+          margin-bottom: 5px;
+        }
 
         &.active>a {
           position: relative;
@@ -65,6 +79,10 @@
             border-left: solid 12px $color-green;
             border-bottom: solid 13px transparent;
             border-top: solid 13px transparent;
+
+            @include breakpoint($tablet) {
+              display: none;
+            }
           }
         }
 
@@ -73,8 +91,13 @@
           color: $color-white;
           font-size: 24px;
           font-weight: $font-thin;
-          line-height: 23px;
+          line-height: 28px;
           border: none;
+
+          @include breakpoint($mobile) {
+            font-size: 18px;
+            line-height: 22px;
+          }
 
           &:hover {
             background: none;
@@ -107,32 +130,71 @@
       &:hover {
         text-decoration: none;
       }
+
+      @include breakpoint($mobile) {
+        font-size: 20px;
+      }
     }
 
     .searcharea {
+      position: relative;
       padding: 0 30px;
+
+      @include breakpoint($tablet) {
+        padding: 0 10px;
+      }
 
       input {
         font-size: 36px;
         font-weight: $font-thin;
+        padding-right: 40px;
+
+        @include breakpoint($mobile) {
+          font-size: 24px;
+          line-height: inherit;
+          padding-right: 34px;
+        }
+      }
+
+      .searchbtn {
+        position: absolute;
+        top: 14px;
+        right: 40px;
+        color: $color-light-gray;
+        font-size: 24px;
+
+        @include breakpoint($tablet) {
+          right: 20px;
+        }
+
+        @include breakpoint($mobile) {
+          top: 6px;
+          font-size: 22px;
+        }
       }
     }
 
     .tab-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
       text-align: center;
       margin-top: 100px;
 
       @include breakpoint($tablet) {
-        margin-top: 30px;
+        margin-top: 15px;
         margin-bottom: 60px;
       }
 
       @include breakpoint($mobile) {
         margin-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
       }
 
       .tab-pane {
-        min-height: 750px;
+        width: 100%;
         padding: 50px;
 
         @include breakpoint($mobile) {
@@ -147,13 +209,17 @@
       p {
         font-weight: $font-light;
         padding: 25px 0;
+
+        @include breakpoint($mobile) {
+          padding: 15px 0;
+        }
       }
     }
 
     .tab-question {
-      @include breakpoint($mobile) {
+      /*@include breakpoint($mobile) {
         padding: 0;
-      }
+      }*/
     }
   }
 
@@ -179,8 +245,14 @@
       padding-top: 60px;
       padding-right: 0;
       padding-left: 0;
+      padding-bottom: 60px;
       margin-top: 0;
       margin-right: 0;
+    }
+
+    @include breakpoint($mobile) {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     .section03support-inner {
@@ -225,6 +297,10 @@
 
       &:hover {
         text-decoration: none;
+      }
+
+      @include breakpoint($mobile) {
+        font-size: 20px;
       }
     }
   }

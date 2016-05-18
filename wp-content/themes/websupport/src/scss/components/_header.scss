@@ -6,8 +6,6 @@ header {
   width: 100%;
   height: 78px;
 
-  background: url(img/black-square.png);
-
   /*background: rgba(0,0,0,1);
   background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.45) 53%, rgba(0,0,0,0) 96%, rgba(0,0,0,0) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(53%, rgba(0,0,0,0.45)), color-stop(96%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0)));
@@ -26,6 +24,10 @@ header {
     height: 1px;
     background: $color-white;
     @include opacity(.15);
+  }
+
+  &.black-header {
+    background: url(img/black-square.png);
   }
 
   #logo {
@@ -76,6 +78,11 @@ header {
         @include breakpoint($tablet) {
           display: block;
           background: $color-black;
+          border-bottom: 1px solid #222;
+        }
+
+        &:last-child {
+          border-bottom: none;
         }
 
         a {
@@ -88,7 +95,7 @@ header {
           &:hover {
             color: $color-white;
             text-decoration: none;
-            @include opacity(1);
+            //@include opacity(1);
           }
 
           &:focus {
@@ -127,7 +134,7 @@ header {
         color: $color-white;
         text-decoration: none;
         border: 1px solid $color-white;
-        @include opacity(1);
+        //@include opacity(1);
       }
 
       &:focus {

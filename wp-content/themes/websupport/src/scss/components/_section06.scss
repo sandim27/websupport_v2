@@ -3,18 +3,23 @@
   max-width: 1920px;
   margin: 0 auto;
 
-  h2{
+  @include breakpoint($wrapper) {
+    //padding: 60px 0 0 0;
+    background: $color-white;
+  }
+
+  @include breakpoint($mobile) {
+    //padding-top: 30px;
+  }
+
+  h2 {
     color: $color-black;
     text-align: center;
     margin: 0 0 60px 0;
+
     @include breakpoint($tablet) {
       margin: 0 0 40px 0;
     }
-  }
-
-  @include breakpoint($wrapper) {
-    padding: 60px 0 0 0;
-    background: $color-white;
   }
 
   .wrapper {
@@ -45,17 +50,26 @@
   article {
     margin-bottom: 60px;
     @include flexbox((
-      flex-basis:361px
+      flex-basis: 360px
     ));
 
     @include breakpoint($wrapper) {
-      padding: 0 30px;
-      margin-bottom: 30px;
+      //padding: 0 30px;
+      //margin-bottom: 30px;
+      margin: 0 30px 30px 30px;
     }
 
-    @include breakpoint($mobile) {
-      padding: 0 20px;
+    /*@include breakpoint($tablet) {
+      margin: 0 20px 30px 20px;
+    }*/
+    @include breakpoint($tablet) {
+      @include flexbox((
+              flex: 1 1 360px,
+              justify-content:space-around,
+      ));
+      //margin: 0 20px 30px 20px;
     }
+
     h3 {
       &:before {
         content: '';
@@ -67,6 +81,7 @@
         }
       }
     }
+
     &:first-child {
       h3 {
         &:before {
@@ -76,7 +91,8 @@
         }
       }
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       h3 {
         &:before {
           height:37px;
@@ -85,7 +101,8 @@
         }
       }
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
       h3 {
         &:before {
           height:37px;
@@ -94,7 +111,8 @@
         }
       }
     }
-    &:nth-child(4){
+
+    &:nth-child(4) {
       h3 {
         &:before {
           height:30px;
@@ -103,7 +121,8 @@
         }
       }
     }
-    &:nth-child(5){
+
+    &:nth-child(5) {
       h3 {
         &:before {
           height:35px;
@@ -112,7 +131,8 @@
         }
       }
     }
-    &:nth-child(6){
+
+    &:nth-child(6) {
       h3 {
         &:before {
           height:38px;

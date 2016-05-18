@@ -13,7 +13,7 @@
     padding-right: 7%;
 
     @include breakpoint($mobile) {
-      padding: 20px 7% 20px;
+      padding: 15px 15px;
     }
 
     h3 {
@@ -22,8 +22,8 @@
       line-height: 60px;
 
       @include breakpoint($mobile) {
-        font-size: 46px;
-        line-height: 48px;
+        font-size: 36px;
+        line-height: 38px;
       }
     }
 
@@ -34,6 +34,8 @@
       margin: 50px 0;
 
       @include breakpoint($mobile) {
+        letter-spacing: .02rem;
+        margin-top: 30px;
         margin-bottom: 20px;
       }
     }
@@ -44,6 +46,10 @@
       font-weight: $font-light;
       text-transform: uppercase;
       letter-spacing: .05rem;
+
+      @include breakpoint($mobile) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -67,6 +73,10 @@
       color: $color-green-light;
       font-size: 36px;
       font-weight: $font-light;
+
+      @include breakpoint($mobile) {
+        font-size: 28px;
+      }
     }
 
     button {
@@ -89,6 +99,8 @@
       }
 
       @include breakpoint($mobile) {
+        font-size: 24px;
+        padding: 14px;
         margin-top: 20px;
         margin-bottom: 20px;
       }
