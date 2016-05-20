@@ -1,15 +1,8 @@
 #section06 {
   background: url(img/section06bg.jpg) right center no-repeat $color-white;
-  max-width: 1920px;
-  margin: 0 auto;
 
   @include breakpoint($wrapper) {
-    //padding: 60px 0 0 0;
     background: $color-white;
-  }
-
-  @include breakpoint($mobile) {
-    //padding-top: 30px;
   }
 
   h2 {
@@ -23,6 +16,8 @@
   }
 
   .wrapper {
+    //max-width: 1920px;
+    margin: 0 auto;
     @include breakpoint($wrapper) {
       padding: 0;
     }
@@ -54,20 +49,20 @@
     ));
 
     @include breakpoint($wrapper) {
-      //padding: 0 30px;
-      //margin-bottom: 30px;
       margin: 0 30px 30px 30px;
     }
 
-    /*@include breakpoint($tablet) {
-      margin: 0 20px 30px 20px;
-    }*/
     @include breakpoint($tablet) {
       @include flexbox((
               flex: 1 1 360px,
               justify-content:space-around,
       ));
-      //margin: 0 20px 30px 20px;
+    }
+
+    &:last-child {
+      @include breakpoint($mobile) {
+        margin-bottom: 0;
+      }
     }
 
     h3 {
@@ -85,8 +80,8 @@
     &:first-child {
       h3 {
         &:before {
-          height:38px;
-          width:31px;
+          width: 31px;
+          height: 38px;
           background: url(img/icon01-sec06.png) no-repeat;
         }
       }

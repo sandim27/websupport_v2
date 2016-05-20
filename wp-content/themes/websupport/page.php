@@ -22,13 +22,13 @@
 
           <section id="section01">
             <div class="wrapper row">
-              <div class="col-md-8 section01tagwrap">
+              <div class="section01tagwrap">
                 <h3>We improve user conversion by optimizing page loading times</h3>
                 <p>Over 72% of all websites are significantly underperforming in areas of performance, mobility, security, or the combination of thereof.
                   We can help to address those issues through support, optimization, and development.  We built our teams of the best talent available and can address any issue or develop any solution you can imagine. Challenge us!</p>
                 <a href="/" class="read-more">Read more about</a>
               </div>
-              <div class="col-md-4 section01form">
+              <div class="section01form">
                 <h2>Let's talk</h2>
                 <form>
                   <div class="form-group">
@@ -46,34 +46,17 @@
           <section id="section02">
             <div class="wrapper">
               <h2>Services</h2>
-              <div class="row section02wrap">
-                <div class="col-md-4 section02col">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/icon-repair.png"/>
-                  <h3>Performance</h3>
-                  <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
-                  <a href="/" class="buy-now">Buy now</a>
-                </div>
-                <div class="col-md-4 section02col">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/icon-cus.png"/>
-                  <h3>Mobility</h3>
-                  <p>We'll optimize or update your website to make it mobile ready and responsive on any devices, tablet or phone. Over 50% of all US web traffic came from mobile devices. If you're not able to serve your audience on mobile platforms, you are losing a huge chunk of your audience and lowering trust to your brand.</p>
-                  <a href="/" class="buy-now">Buy now</a>
-                </div>
-                <div class="col-md-4 section02col">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/icon-set.png"/>
-                  <h3>Security</h3>
-                  <p>Your website is a representation of your organization or your brand, and often your first interaction with the potential customers, which is very important to build trust and relationships. If your website isn't safe and secure, those critical business relationships can be compromised. With our services, you can be sure they never will.</p>
-                  <a href="/" class="buy-now">Buy now</a>
-                </div>
+              <div class="section02wrap">
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('section02') ) { ?> <?php } ?>
               </div>
             </div>
           </section>
 
           <section id="section03">
-            <div class="wrapper row">
-              <div class="col-md-8 section03faq">
+            <div class="wrapper">
+              <div class="section03faq">
                 <!-- Tab panes -->
-                <div class="tab-content col-md-6">
+                <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="q1">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/icon-repair-white.png"/>
                     <h3>Performance</h3>
@@ -89,7 +72,7 @@
                   <div role="tabpanel" class="tab-pane" id="q8">8</div>
                 </div>
                 <!-- Nav tabs -->
-                <div class="tab-question col-md-6">
+                <div class="tab-question">
                   <h2>FAQ</h2>
                   <div class="row searcharea">
                     <input type="text" class="form-control" placeholder="Search"/>
@@ -107,12 +90,12 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-4 section03support">
-                <div class="section03support-inner">
-                  <h2>Support</h2>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/laptop.jpg"/>
-                  <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
-                  <a href="/" class="purchase-now">Purchase now</a>
+              <div class="section03support">
+                <div class="section03support-wrap">
+                    <h2>Support</h2>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/laptop.jpg"/>
+                    <p>Website performance can affect usability and conversion. 40% of site visitors will likely leave a site if it takes more than 3 seconds to load. 54% of those will never return. We'll make sure this doesn't happen to your site.</p>
+                    <a href="/" class="purchase-now">Purchase now</a>
                 </div>
               </div>
             </div>

@@ -8,6 +8,10 @@
   background: $color-green;
 }
 
+/** {
+  -webkit-overflow-scrolling: touch;
+}*/
+
 body {
   color: $color-white;
   font-family: $font-family-base;
@@ -25,10 +29,16 @@ a {
   transition: all 0.3s ease;
 }
 
+p {
+  line-height: 25px;
+  letter-spacing: .03rem;
+}
+
 h2 {
   font-size: 67px;
   font-weight: $font-thin;
-  margin-top: 0;
+  text-align: center;
+  margin: 0 0 50px;
 
   @include breakpoint($tablet-portrait) {
     font-size: 50px;
@@ -36,6 +46,7 @@ h2 {
 
   @include breakpoint($mobile) {
     font-size: 46px;
+    margin-bottom: 30px;
   }
 }
 

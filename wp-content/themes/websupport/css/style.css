@@ -7891,6 +7891,9 @@ button.close {
   color: #fff;
   background: #39c0a7; }
 
+/** {
+  -webkit-overflow-scrolling: touch;
+}*/
 body {
   color: #fff;
   font-family: "PFDinDisplayPro";
@@ -7909,16 +7912,22 @@ body > section:after {
 a {
   transition: all 0.3s ease; }
 
+p {
+  line-height: 25px;
+  letter-spacing: .03rem; }
+
 h2 {
   font-size: 67px;
   font-weight: 200;
-  margin-top: 0; }
+  text-align: center;
+  margin: 0 0 50px; }
   @media (max-width: 768px) {
     h2 {
       font-size: 50px; } }
   @media (max-width: 480px) {
     h2 {
-      font-size: 46px; } }
+      font-size: 46px;
+      margin-bottom: 30px; } }
 
 h3 {
   font-size: 36px;
@@ -8144,8 +8153,10 @@ footer {
     footer .footer-contact {
       width: 100%; } }
   footer .footer-contact a {
+    display: block;
+    color: #fff;
     font-size: 20px;
-    color: #fff; }
+    margin-top: 10px; }
     footer .footer-contact a i {
       opacity: 0.5;
       filter: alpha(opacity=50);
@@ -8153,9 +8164,11 @@ footer {
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
       margin-right: 4px; }
-    footer .footer-contact a:hover i {
-      opacity: 1;
-      filter: alpha(opacity=100); }
+    footer .footer-contact a:hover {
+      text-decoration: none; }
+      footer .footer-contact a:hover i {
+        opacity: 1;
+        filter: alpha(opacity=100); }
     @media (max-width: 992px) {
       footer .footer-contact a {
         text-align: center;
@@ -8206,7 +8219,7 @@ footer {
         margin-bottom: 20px; } }
 
 section {
-  padding: 90px 0 40px 0; }
+  padding: 80px 0 60px 0; }
   @media (max-width: 992px) {
     section {
       padding: 60px 0 40px 0; } }
@@ -8225,8 +8238,16 @@ section {
 
 #section01 {
   background-size: cover;
-  padding-top: 78px; }
+  padding-top: 78px;
+  padding-bottom: 0; }
+  #section01 .wrapper {
+    display: flex; }
+    @media (max-width: 992px) {
+      #section01 .wrapper {
+        display: block; } }
   #section01 .section01tagwrap {
+    -webkit-flex: 2 1 100px;
+    flex: 2 1 100px;
     padding-top: 164px;
     padding-bottom: 100px;
     padding-left: 7%;
@@ -8244,8 +8265,6 @@ section {
           line-height: 38px; } }
     #section01 .section01tagwrap p {
       font-weight: 300;
-      letter-spacing: .03rem;
-      line-height: 25px;
       margin: 50px 0; }
       @media (max-width: 480px) {
         #section01 .section01tagwrap p {
@@ -8262,6 +8281,8 @@ section {
         #section01 .section01tagwrap .read-more {
           font-size: 18px; } }
   #section01 .section01form {
+    -webkit-flex: 1 1 100px;
+    flex: 1 1 100px;
     padding: 72px 50px;
     margin-top: 32px; }
     @media (max-width: 992px) {
@@ -8275,7 +8296,8 @@ section {
     #section01 .section01form h2 {
       color: #29ebc8;
       font-size: 36px;
-      font-weight: 300; }
+      font-weight: 300;
+      text-align: left; }
       @media (max-width: 480px) {
         #section01 .section01form h2 {
           font-size: 28px; } }
@@ -8309,37 +8331,58 @@ section {
   color: #000;
   background: #fff; }
   #section02 .section02wrap {
-    display: flex; }
-    @media (max-width: 992px) {
-      #section02 .section02wrap {
-        display: block; } }
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    /*@include breakpoint($wrapper) {
+      padding: 0 10px;
+    }*/ }
   #section02 h2 {
     text-align: center;
-    margin: 0 0 85px; }
+    flex: 1 1 100%;
+    margin: 0 0 67px; }
     @media (max-width: 480px) {
       #section02 h2 {
-        margin-bottom: 60px; } }
-  #section02 .section02col {
+        margin-bottom: 15px; } }
+  #section02 article {
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
     position: relative;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding-bottom: 62px; }
-    @media (max-width: 480px) {
-      #section02 .section02col {
-        margin-bottom: 70px; } }
+    @media (max-width: 768px) {
+      #section02 article {
+        -webkit-flex: 1 1 100%;
+        flex: 1 1 100%; } }
     @media (max-width: 992px) {
-      #section02 .section02col:last-child {
-        margin-bottom: 50px; } }
+      #section02 article {
+        margin-bottom: 30px; } }
+    #section02 article:first-child h3:before {
+      background: url(img/icon-repair.png) no-repeat; }
+    #section02 article:nth-child(2) h3:before {
+      background: url(img/icon-cus.png) no-repeat; }
+    #section02 article:last-child h3:before {
+      background: url(img/icon-set.png) no-repeat; }
     @media (max-width: 480px) {
-      #section02 .section02col:last-child {
+      #section02 article:last-child {
         margin-bottom: 0; } }
-    #section02 .section02col h3 {
-      margin-top: 35px;
+    #section02 article h3 {
       margin-bottom: 0; }
-    #section02 .section02col p {
-      padding: 25px; }
+      #section02 article h3:before {
+        content: '';
+        width: 53px;
+        height: 53px;
+        margin: 0 auto 30px auto;
+        display: block;
+        vertical-align: middle; }
+    #section02 article p {
+      padding: 25px 30px 30px 30px; }
       @media (max-width: 480px) {
-        #section02 .section02col p {
+        #section02 article p {
           padding: 15px 10px; } }
   #section02 .buy-now {
     display: block;
@@ -8354,27 +8397,34 @@ section {
     background: #000;
     margin-left: -145px;
     padding: 14px; }
-    #section02 .buy-now:hover {
+    #section02 .buy-now:hover, #section02 .buy-now:focus {
       text-decoration: none; }
     @media (max-width: 480px) {
       #section02 .buy-now {
         font-size: 20px; } }
 
 #section03 {
+  overflow: hidden;
+  position: relative;
   background-size: cover; }
   #section03 .wrapper {
-    display: flex;
-    padding: 0; }
+    display: flex; }
     @media (max-width: 992px) {
       #section03 .wrapper {
         display: block; } }
   #section03 .section03faq {
-    display: flex; }
+    display: flex;
+    -webkit-flex: 2 1 230px;
+    flex: 2 1 230px; }
     @media (max-width: 992px) {
       #section03 .section03faq {
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse; } }
     #section03 .section03faq h2 {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 0; }
       @media (max-width: 992px) {
         #section03 .section03faq h2 {
           margin-top: 0; } }
@@ -8387,7 +8437,7 @@ section {
       margin-top: 35px;
       margin-bottom: 0; }
     #section03 .section03faq ul {
-      margin: 50px 0;
+      margin: 50px 0 0 0;
       border: none; }
       @media (max-width: 992px) {
         #section03 .section03faq ul {
@@ -8399,7 +8449,7 @@ section {
       #section03 .section03faq ul li {
         float: none;
         list-style: none;
-        margin-bottom: 20px; }
+        margin-bottom: 25px; }
         @media (max-width: 992px) {
           #section03 .section03faq ul li {
             margin-bottom: 5px; } }
@@ -8416,7 +8466,7 @@ section {
             width: 12px;
             height: 24px;
             position: absolute;
-            top: 10px;
+            top: 11px;
             left: -30px;
             border-left: solid 12px #39c0a7;
             border-bottom: solid 13px transparent;
@@ -8427,9 +8477,11 @@ section {
         #section03 .section03faq ul li a {
           position: relative;
           color: #fff;
-          font-size: 24px;
-          font-weight: 200;
-          line-height: 28px;
+          font-size: 23px;
+          font-weight: 300;
+          line-height: 27px;
+          letter-spacing: 0.1rem;
+          padding-left: 20px;
           border: none; }
           @media (max-width: 480px) {
             #section03 .section03faq ul li a {
@@ -8444,7 +8496,7 @@ section {
             font-family: 'FontAwesome';
             font-size: 24px;
             position: absolute;
-            left: -10px; }
+            left: -7px; }
     #section03 .section03faq .buy-now {
       display: block;
       width: 100%;
@@ -8465,10 +8517,11 @@ section {
       padding: 0 30px; }
       @media (max-width: 992px) {
         #section03 .section03faq .searcharea {
-          padding: 0 10px; } }
+          padding: 0 15px; } }
       #section03 .section03faq .searcharea input {
         font-size: 36px;
         font-weight: 200;
+        padding-left: 10px;
         padding-right: 40px; }
         @media (max-width: 480px) {
           #section03 .section03faq .searcharea input {
@@ -8483,30 +8536,37 @@ section {
         font-size: 24px; }
         @media (max-width: 992px) {
           #section03 .section03faq .searcharea .searchbtn {
-            right: 20px; } }
+            right: 25px; } }
         @media (max-width: 480px) {
           #section03 .section03faq .searcharea .searchbtn {
             top: 6px;
             font-size: 22px; } }
     #section03 .section03faq .tab-content {
+      -webkit-flex: 1 1 600px;
+      flex: 1 1 600px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: stretch;
       text-align: center;
-      margin-top: 100px; }
+      padding-left: 0;
+      padding-right: 20px;
+      margin-top: 43px; }
       @media (max-width: 992px) {
         #section03 .section03faq .tab-content {
-          margin-top: 15px;
-          margin-bottom: 60px; } }
+          -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+          flex-basis: auto;
+          padding-right: 0; } }
       @media (max-width: 480px) {
         #section03 .section03faq .tab-content {
+          margin-top: 15px;
           margin-bottom: 30px;
-          padding-left: 0;
-          padding-right: 0; } }
+          /*padding-left: 0;
+        padding-right: 0;*/ } }
       #section03 .section03faq .tab-content .tab-pane {
         width: 100%;
-        padding: 50px; }
+        padding: 80px 30px; }
         @media (max-width: 480px) {
           #section03 .section03faq .tab-content .tab-pane {
             padding: 30px 20px; } }
@@ -8519,56 +8579,68 @@ section {
           #section03 .section03faq .tab-content p {
             padding: 15px 0; } }
     #section03 .section03faq .tab-question {
-      /*@include breakpoint($mobile) {
-        padding: 0;
-      }*/ }
+      -webkit-flex: 1 1 600px;
+      flex: 1 1 600px;
+      padding-left: 10px;
+      padding-right: 30px; }
+      @media (max-width: 992px) {
+        #section03 .section03faq .tab-question {
+          -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+          padding: 0; } }
   #section03 .section03support {
+    display: flex;
+    -webkit-flex: 1 1 100px;
+    flex: 1 1 100px;
     color: #000;
     text-align: center;
     background-color: #eaeaea;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-top: -90px;
-    margin-bottom: -40px;
-    margin-right: -9000px;
-    width: 9000px; }
+    margin-top: -80px;
+    margin-bottom: -60px; }
     @media (max-width: 1460px) {
       #section03 .section03support {
         width: auto;
-        padding-right: 40px;
         margin-right: 0; } }
     @media (max-width: 992px) {
       #section03 .section03support {
-        width: 100%;
-        padding-top: 60px;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 60px;
+        /*width: 100%;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: -40px;
+      margin-left: -20px;*/
         margin-top: 0;
-        margin-right: 0; } }
-    @media (max-width: 480px) {
-      #section03 .section03support {
-        padding-top: 30px;
-        padding-bottom: 30px; } }
-    #section03 .section03support .section03support-inner {
-      max-width: 450px;
-      padding: 0 30px; }
-      @media (min-width: 993px) {
-        #section03 .section03support .section03support-inner {
-          padding-right: 0; } }
+        margin-right: -20px;
+        margin-left: -20px;
+        margin-bottom: -40px; } }
+    #section03 .section03support:after {
+      content: '';
+      background-color: #eaeaea;
+      position: absolute;
+      width: 9000px;
+      height: 100%; }
       @media (max-width: 992px) {
-        #section03 .section03support .section03support-inner {
-          max-width: 100%; } }
-      #section03 .section03support .section03support-inner img {
-        max-width: 100%; }
+        #section03 .section03support:after {
+          display: none; } }
     #section03 .section03support h2 {
       color: #239882;
-      margin-bottom: 50px; }
+      margin-bottom: 30px; }
       @media (max-width: 992px) {
         #section03 .section03support h2 {
           margin-top: 0; } }
     #section03 .section03support p {
-      padding: 25px 0; }
+      padding: 25px 0;
+      margin-bottom: 20px; }
+    #section03 .section03support .section03support-wrap {
+      padding: 90px 0 90px 30px; }
+      @media (max-width: 992px) {
+        #section03 .section03support .section03support-wrap {
+          padding: 60px 30px; } }
+      @media (max-width: 480px) {
+        #section03 .section03support .section03support-wrap {
+          padding-top: 30px;
+          padding-bottom: 30px; } }
+      #section03 .section03support .section03support-wrap img {
+        max-width: 100%; }
     #section03 .section03support .purchase-now {
       display: block;
       max-width: 280px;
@@ -8585,7 +8657,8 @@ section {
           font-size: 20px; } }
 
 #section04 {
-  background: #fff; }
+  background: #fff;
+  padding-bottom: 30px; }
   #section04 .wrapper {
     display: -webkit-flex;
     display: flex;
@@ -8598,21 +8671,19 @@ section {
     color: #000;
     text-align: center;
     flex: 1 1 100%;
-    margin: 0 0 50px 0; }
+    margin: 0 0 40px; }
   #section04 article {
     -webkit-flex: 1 1 360px;
     flex: 1 1 360px;
     -webkit-justify-content: space-around;
     justify-content: space-around;
-    margin: 0 100px 30px 0; }
+    margin: 0 100px 50px 0; }
     @media (max-width: 1460px) {
       #section04 article {
         margin: 0 60px 30px 60px; } }
     @media (max-width: 992px) {
       #section04 article {
         margin: 0 20px 30px 20px; } }
-    #section04 article:last-child {
-      margin-bottom: 0; }
   #section04 h3 {
     color: #000;
     font-size: 24px;
@@ -8703,9 +8774,7 @@ section {
       filter: alpha(opacity=50); }
 
 #section06 {
-  background: url(img/section06bg.jpg) right center no-repeat #fff;
-  max-width: 1920px;
-  margin: 0 auto; }
+  background: url(img/section06bg.jpg) right center no-repeat #fff; }
   @media (max-width: 1460px) {
     #section06 {
       background: #fff; } }
@@ -8716,9 +8785,11 @@ section {
     @media (max-width: 992px) {
       #section06 h2 {
         margin: 0 0 40px 0; } }
-  @media (max-width: 1460px) {
-    #section06 .wrapper {
-      padding: 0; } }
+  #section06 .wrapper {
+    margin: 0 auto; }
+    @media (max-width: 1460px) {
+      #section06 .wrapper {
+        padding: 0; } }
   #section06 .wrap06 {
     width: 820px;
     display: -webkit-flex;
@@ -8738,10 +8809,7 @@ section {
   #section06 article {
     margin-bottom: 60px;
     -webkit-flex-basis: 360px;
-    flex-basis: 360px;
-    /*@include breakpoint($tablet) {
-      margin: 0 20px 30px 20px;
-    }*/ }
+    flex-basis: 360px; }
     @media (max-width: 1460px) {
       #section06 article {
         margin: 0 30px 30px 30px; } }
@@ -8751,6 +8819,9 @@ section {
         flex: 1 1 360px;
         -webkit-justify-content: space-around;
         justify-content: space-around; } }
+    @media (max-width: 480px) {
+      #section06 article:last-child {
+        margin-bottom: 0; } }
     #section06 article h3:before {
       content: '';
       margin: 0 10px 0 0;
@@ -8760,8 +8831,8 @@ section {
         #section06 article h3:before {
           width: 24px; } }
     #section06 article:first-child h3:before {
-      height: 38px;
       width: 31px;
+      height: 38px;
       background: url(img/icon01-sec06.png) no-repeat; }
     #section06 article:nth-child(2) h3:before {
       height: 37px;
@@ -8806,6 +8877,9 @@ section {
 #customers {
   padding: 90px 0 70px 0;
   background-color: #fff; }
+  @media (max-width: 992px) {
+    #customers {
+      padding: 30px 0; } }
   @media (max-width: 480px) {
     #customers {
       padding: 30px 0; } }
@@ -8996,9 +9070,6 @@ section {
   @media (max-width: 768px) {
     #section08 {
       height: auto; } }
-  #section08 h2 {
-    text-align: center;
-    margin: 0 0 40px 0; }
   #section08 textarea {
     height: 60px; }
   #section08 .submit {

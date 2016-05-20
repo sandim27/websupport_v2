@@ -1,5 +1,6 @@
 #section04 {
   background: $color-white;
+  padding-bottom: 30px;
 
   .wrapper {
     @include display-flex;
@@ -13,15 +14,15 @@
     color: $color-black;
     text-align: center;
     flex: 1 1 100%;
-    margin: 0 0 50px 0;
+    margin: 0 0 40px;
   }
 
   article {
     @include flexbox((
       flex: 1 1 360px,
-      justify-content:space-around,
+      justify-content: space-around,
     ));
-    margin: 0 100px 30px 0;
+    margin: 0 100px 50px 0;
 
     @include breakpoint($wrapper) {
       margin: 0 60px 30px 60px;
@@ -32,7 +33,7 @@
     }
 
     &:last-child {
-      margin-bottom: 0;
+      //margin-bottom: 0;
     }
   }
 

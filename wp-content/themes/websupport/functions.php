@@ -174,7 +174,7 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Swiper-slides'),
+        'name' => __('Just Fixed'),
         'description' => __('Description for this widget-area...', 'html5blank'),
         'id' => 'swiper-slides',
         'before_widget' => '<div id="%1$s" class="swiper-slide"> <div class="slide-contayner">',
@@ -184,7 +184,17 @@ if (function_exists('register_sidebar'))
     ));
 
     register_sidebar(array(
-       'name' => __('Section04'),
+           'name' => __('Services'),
+           'description' => __('Description for this widget-area...', 'html5blank'),
+           'id' => 'section02',
+           'before_widget' => '<article>',
+           'after_widget' => '<a href="/" class="buy-now">Buy now</a></article>',
+           'before_title' => '<h3>',
+           'after_title' => '</h3>'
+       ));
+
+    register_sidebar(array(
+       'name' => __('Direction'),
        'description' => __('Description for this widget-area...', 'html5blank'),
        'id' => 'section04',
        'before_widget' => '<article>',
@@ -194,7 +204,7 @@ if (function_exists('register_sidebar'))
    ));
 
     register_sidebar(array(
-      'name' => __('Section06'),
+      'name' => __('Privilege'),
       'description' => __('Description for this widget-area...', 'html5blank'),
       'id' => 'section06',
       'before_widget' => '<article>',

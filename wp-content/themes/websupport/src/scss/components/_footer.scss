@@ -15,7 +15,7 @@ footer {
     }
   }
 
-  .footer-logo{
+  .footer-logo {
     text-transform: uppercase;
     text-decoration: none;
     color: $color-white;
@@ -49,8 +49,10 @@ footer {
     }
 
     a {
-      font-size: 20px;
+      display: block;
       color: $color-white;
+      font-size: 20px;
+      margin-top: 10px;
 
       i {
         @include opacity(0.5);
@@ -58,8 +60,12 @@ footer {
         margin-right: 4px;
       }
 
-      &:hover i {
-        @include opacity(1);
+      &:hover {
+        text-decoration: none;
+
+        i {
+          @include opacity(1);
+        }
       }
 
       @include breakpoint($tablet) {
